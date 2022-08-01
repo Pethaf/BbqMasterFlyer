@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #404040;
+    text-align: center;
+}
+
+h1 {
+ font-size: 2.25rem;
+ font-weight: 300;   
+ margin: 2em 0;
+}
+
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.3125rem;
+}
+
+h2 + p {
+    font-weight: 900;
+    color:#F18119;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.bold-text {
+    font-weight: 900;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    font-weight: 900;
+    color: #F18119;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.splash {
+    background-color:#404040;
+    background-image: url(../img/dark-ribs.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 .5em 2em;
+    display: flex;
+    flex-direction: column;
+} 
+
+h1 {
+    color: #FFF;
+}
+
+.top-text {
+    order: -1;
+}
+
+.main-content {
+    padding: 2em 1em;
+} 
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+        flex-direction: row;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    .splash,.main-content {
+        width: 50%;
+        height: 100vh;
+    }
+}
